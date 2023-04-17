@@ -19,8 +19,9 @@ function App() {
         </a>
       </header>
 	  <body>
-		<h1>hogehoge</h1>
-		<h2>Hello, React!</h2>
+		<h1>Hello, React!</h1>
+		<h2>hogehoge</h2>
+		<p>fugafuga</p>
 	  </body>
     </div>
   );
