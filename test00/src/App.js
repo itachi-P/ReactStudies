@@ -53,8 +53,8 @@ class App extends React.Component {
 		<body>
 			<h1>ようこそ、{this.state.name}！</h1>
 			<h2>{this.state.message}</h2>
-			<button onClick={() => {this.changeName('JoJo')}}>JoJo</button>
-			<button onClick={() => {this.changeName('Dio')}}>Dio</button>
+			<button onClick={() => {this.changeName('JoJo')}}>ぼくはJoJo。ジョナサン=ジョースターだ。</button>
+			<button onClick={() => {this.changeName('Dio')}}>俺はDio。いいか、今後必ずディオ様と呼べッッ！</button>
 			
 			<h2>
 				Count: {this.state.count}
