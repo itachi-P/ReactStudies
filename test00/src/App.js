@@ -21,6 +21,7 @@ function App() {
 	  <body>
 		<h1>Hello, React!</h1>
 		<h2>hogehoge</h2>
+		<h3>FizzBuzz</h3>
 		<p>fugafuga</p>
 	  </body>
     </div>
