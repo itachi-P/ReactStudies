@@ -9,10 +9,11 @@ class App extends React.Component {
   }
   
   changeName(name) {
-	this.setState({name: name});
 	if (name === "JoJo") {
+		this.setState({name: "ジョジョォー"});
 		this.setState({message: "萌え尽きるほどニート！"});
 	} else if (name === "Dio") {
+		this.setState({name: "ディオ様ァーッ"});
 		this.setState({message: "オデは人間をやめるじょー！"});
 	}
   }
@@ -46,7 +47,7 @@ class App extends React.Component {
 		  </a>
 		</header>
 		<body>
-			<h1>ようこそ、{this.state.name}さん！</h1>
+			<h1>ようこそ、{this.state.name}！</h1>
 			<h2>{this.state.message}</h2>
 			<button onClick={() => {this.changeName('JoJo')}}>JoJo</button>
 			<button onClick={() => {this.changeName('Dio')}}>Dio</button>
