@@ -25,6 +25,10 @@ class App extends React.Component {
   countDown() {
 	this.setState({count: this.state.count - 1})
   }
+
+  countReset() {
+	this.setState({count: 0});
+  }
   
   render() {
 	console.log(this.state.name);
@@ -57,6 +61,7 @@ class App extends React.Component {
 			</h2>
 			<button onClick={() => {this.countUp()}}>＋</button>
 			<button onClick={() => {this.countDown()}}>−</button>
+			<button onClick={() => {this.countReset()}}>リセット</button>
 		</body>
     	</div>
     );
