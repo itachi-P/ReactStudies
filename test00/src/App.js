@@ -54,14 +54,14 @@ class App extends React.Component {
 			<h1>ようこそ、{this.state.name}！</h1>
 			<h2>{this.state.message}</h2>
 			<button onClick={() => {this.changeName('JoJo')}}>ぼくはJoJo。ジョナサン=ジョースターだ。</button>
-			<button onClick={() => {this.changeName('Dio')}}>俺はDio。いいか、今後必ずディオ様と呼べッッ！</button>
+			<button onClick={() => {this.changeName('Dio')}}>俺はDio。いいか、今後必ずディオ様と呼ぶんだッッ！</button>
 			
 			<h2>
 				Count: {this.state.count}
 			</h2>
 			<button onClick={() => {this.countUp()}}>＋</button>
 			<button onClick={() => {this.countDown()}}>−</button>
-			<button onClick={() => {this.countReset()}}>リセット</button>
+			<button onClick={() => {this.countReset()}}>カウンターリセット</button>
 		</body>
     	</div>
     );
