@@ -32,9 +32,13 @@ class App extends React.Component {
   render() {
 	console.log(this.state.name);
 	console.log(this.state.message);
+	const nameList = ['Nanacy Nogonbe','JoJo','Dio'];
     return (
 	<div className="App">
 		<body>
+			{ nameList.map((names) => {
+				return <p>{names}</p>})};
+
 			<h1>ようこそ、{this.state.name}！</h1>
 			<h2>{this.state.message}</h2>
 			<button onClick={() => {this.changeName('JoJo')}}>ぼくはJoJo。ジョナサン=ジョースターだ。</button>
