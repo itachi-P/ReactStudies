@@ -4,7 +4,7 @@ import React from 'react';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {name: 'Nanacy Nogonbe', message: "", count: 0};
+    this.state = {name: 'Nanacy Nogonbe', message: '', count: 0};
   }
   
   changeName(name) {
@@ -32,12 +32,16 @@ class App extends React.Component {
   render() {
 	console.log(this.state.name);
 	console.log(this.state.message);
-	const nameList = ['Nanacy Nogonbe','JoJo','Dio'];
+	const characterList = [
+      {name: 'Nanacy Nogonbe', message: 'いらっしゃーい'},
+      {name: 'JoJo', message: '君がッ泣くまで殴るのをやめないッ！'},
+      {name: 'Dio', message: 'このきたならしい阿呆がァーーッ!!'}
+    ];
     return (
 	<div className="App">
 		<body>
-			{ nameList.map((names) => {
-				return <p>{names}</p>})};
+			{characterList.map((characterItem) => {
+				return <div><p>{characterItem.name} : {characterItem.message}</p></div>})};
 
 			<h1>ようこそ、{this.state.name}！</h1>
 			<h2>{this.state.message}</h2>
