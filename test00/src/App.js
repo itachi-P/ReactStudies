@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 
@@ -10,7 +9,7 @@ class App extends React.Component {
   
   changeName(name) {
 	if (name === "JoJo") {
-		this.setState({name: "ジョジョォー"});
+		this.setState({name: "ジョナサン"});
 		this.setState({message: "萌え尽きるほどニート！"});
 	} else if (name === "Dio") {
 		this.setState({name: "ディオ様ァーッ"});
@@ -33,34 +32,17 @@ class App extends React.Component {
   render() {
 	console.log(this.state.name);
 	console.log(this.state.message);
-	console.log(this.state.count);
     return (
-		<div className="App">
-		<header className="App-header">
-		  <img src={logo} className="App-logo" alt="logo" />
-		  <p>
-			Edit <code>src/App.js</code> and save to reload.
-		  </p>
-		  <a
-			className="App-link"
-			href="https://reactjs.org"
-			target="_blank"
-			rel="noopener noreferrer"
-		  >
-			Learn React
-		  </a>
-		</header>
+	<div className="App">
 		<body>
 			<h1>ようこそ、{this.state.name}！</h1>
 			<h2>{this.state.message}</h2>
 			<button onClick={() => {this.changeName('JoJo')}}>ぼくはJoJo。ジョナサン=ジョースターだ。</button>
 			<button onClick={() => {this.changeName('Dio')}}>俺はDio。いいか、今後必ずディオ様と呼ぶんだッッ！</button>
 			
-			<h2>
-				Count: {this.state.count}
-			</h2>
+			<h1>Count: {this.state.count}</h1>
 			<button onClick={() => {this.countUp()}}>＋</button>
-			<button onClick={() => {this.countDown()}}>−</button>
+			<button onClick={() => {this.countDown()}}>－</button>
 			<button onClick={() => {this.countReset()}}>カウンターリセット</button>
 		</body>
     	</div>
