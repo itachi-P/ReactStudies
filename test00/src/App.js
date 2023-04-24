@@ -35,7 +35,8 @@ class App extends React.Component {
 	const characterList = [
       {name: 'Nanacy Nogonbe', message: 'いらっしゃーい'},
       {name: 'JoJo', message: '君がッ泣くまで殴るのをやめないッ！'},
-      {name: 'Dio', message: 'このきたならしい阿呆がァーーッ!!'}
+      {name: 'Dio', message: 'このきたならしい阿呆がァーーッ!!'},
+	{name: 'Speedwagon', message: 'スピードワゴンはCOOOLに去るぜ'},
     ];
     return (
 	<div className="App">
